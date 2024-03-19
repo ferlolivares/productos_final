@@ -6,7 +6,7 @@
     "mysql2": "^3.9.2"
   },
   "scripts": {
-    "start": "npm install --omit=dev && node ./app.js",
+    "start": "node ./app.js",
     "test": "(eslint lib || true) && jest"
   }
 }
