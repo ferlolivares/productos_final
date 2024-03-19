@@ -25,6 +25,12 @@ let conection = mysql.createConnection({
     connectTimeout: 10000
 });
 
+try {
+    conection.connect();
+} catch (error) {
+    console.error('Error al conectar a la base de datos:', error);
+}
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended : true
